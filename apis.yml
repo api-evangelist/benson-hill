@@ -1,8 +1,24 @@
 aid: benson-hill
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/benson-hill.png
 name: Benson Hill *
-description: 'Benson Hill * is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: frontier-tech. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Benson Hill (now operating as Confluence Genetics at confluence.ag) is a seed-innovation
+  company that develops high-protein, energy-dense soybean varieties using AI-driven plant science
+  and advanced crop genetics. Its soy solutions serve three markets — animal feed, human food, and
+  renewable fuel — pairing proven genetics with technology and environmental responsibility. Originally
+  added to the API Evangelist network as a GV portfolio lead; the company has since rebranded from
+  Benson Hill to Confluence Genetics and publishes no public developer API, SDK, or machine-readable
+  specification.'
 url: https://raw.githubusercontent.com/api-evangelist/benson-hill/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +26,23 @@ x-backed-by:
 - gv
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-rebrand:
+  from: Benson Hill
+  to: Confluence Genetics
+  website: https://confluence.ag
+  note: bensonhill.com 301-redirects to confluence.ag as of 2026-07-18.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Frontier Tech
+- Agriculture
+- AgTech
+- Food Tech
+- Biotechnology
+- Crop Genetics
+- Soybean
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,4 +51,19 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://bensonhill.com
+  url: https://confluence.ag
+- type: About
+  url: https://confluence.ag/about/
+- type: Support
+  url: https://confluence.ag/contact/
+- type: PrivacyPolicy
+  url: https://confluence.ag/legal/privacy-policy/
+- type: TermsOfService
+  url: https://confluence.ag/legal/terms-of-use/
+- type: DomainSecurity
+  url: security/benson-hill-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
